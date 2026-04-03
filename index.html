@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>SSI SIMU</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+
+  <!-- ACCUEIL -->
+  <section id="welcomeScreen" class="screen active">
+    <img src="/src/assets/accueil.png" class="full-image" alt="Accueil SSI SIMU" />
+    <button class="continue-btn" onclick="showMenu()">Cliquer pour continuer</button>
+  </section>
+
+  <!-- MENU PRINCIPAL -->
+  <section id="menuScreen" class="screen menu-background">
+    <div class="menu-overlay">
+      <div class="container">
+        <h1>SSI PÉDAGOGIQUE</h1>
+        <div class="menu">
+          <button onclick="alert('Cours SSI à créer')">Cours SSI</button>
+          <button onclick="showSSIA()">SSI Catégorie A</button>
+          <button onclick="alert('SSI Catégorie B à créer')">SSI Catégorie B</button>
+          <button onclick="alert('SSI Catégorie C à créer')">SSI Catégorie C</button>
+          <button onclick="alert('SSI Catégorie D à créer')">SSI Catégorie D</button>
+          <button onclick="alert('SSI Catégorie E à créer')">SSI Catégorie E</button>
+          <button onclick="alert('Administration à créer')">Administration</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SSI A -->
+  <section id="ssiAScreen" class="screen menu-background">
+    <div class="menu-overlay">
+      <div class="container">
+        <h1>SSI CATÉGORIE A</h1>
+        <div class="menu">
+          <button onclick="showA1ScenarioMenu()">SSI A-1</button>
+          <button onclick="alert('SSI A-2 à créer')">SSI A-2</button>
+          <button onclick="showMenu()">Retour</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SCÉNARIOS A-1 -->
+  <section id="a1ScenarioMenuScreen" class="screen scenario-menu-page">
+    <div class="scenario-layout">
+      <div class="scenario-left">
+        <img src="/src/assets/ssi-a1.png" alt="Aperçu SSI A-1" class="scenario-preview-image" />
+      </div>
+
+      <div class="scenario-center">
+        <div class="scenario-card" onclick="openA1Scenario('Scénario 1 - Dérangement')">
+          <div class="scenario-title">SCÉNARIO 1</div>
+          <div class="scenario-subtitle">(Dérangement)</div>
+        </div>
+
+        <div class="scenario-card" onclick="openA1Scenario('Scénario 2 - Défaut moteur')">
+          <div class="scenario-title">SCÉNARIO 2</div>
+          <div class="scenario-subtitle">(Défaut moteur)</div>
+        </div>
+
+        <div class="scenario-card" onclick="openA1Scenario('Scénario 3 - Défaut dialogue')">
+          <div class="scenario-title">SCÉNARIO 3</div>
+          <div class="scenario-subtitle">(Défaut dialogue)</div>
+        </div>
+
+        <div class="scenario-card" onclick="alert('Scénario 4 à créer')">
+          <div class="scenario-title">SCÉNARIO 4</div>
+          <div class="scenario-subtitle">(À créer)</div>
+        </div>
+
+        <button class="scenario-back-btn" onclick="showSSIA()">Retour</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉCRAN SSI -->
+  <section id="ssiA1Screen" class="screen ssi-page">
+    <div class="ssi-image-wrapper">
+      <div class="ssi-stage">
+        <img src="/src/assets/ssi-a1.png" class="ssi-full-image" alt="SSI A-1" />
+
+        <!-- TEXTE -->
+        <div id="ssiMessageBox" class="ssi-message hidden"></div>
+
+        <!-- LEDS -->
+        <div id="greenTop" class="led led-green"></div>
+        <div id="greenMid" class="led led-green"></div>
+        <div id="greenBottom" class="led led-green"></div>
+
+        <div id="orangeTop" class="led led-orange hidden"></div>
+        <div id="orangeMid" class="led led-orange hidden"></div>
+        <div id="orangeZone" class="led led-orange hidden"></div>
+        <div id="orangeExtra" class="led led-orange hidden"></div>
+        <div id="orangeMotor" class="led led-orange hidden"></div>
+
+        <!-- BOUTON ACQUITTEMENT -->
+        <button
+          id="stopSignalHotspot"
+          class="hotspot hotspot-stop"
+          onclick="handleStopSignalSonore()"
+          title="Arrêt signal sonore"
+        ></button>
+      </div>
+    </div>
+
+    <!-- BARRE BAS -->
+    <div class="ssi-bottom-bar">
+      <button class="menu-bars-btn" onclick="showA1ScenarioMenu()" title="Retour menu">☰</button>
+
+      <button class="icon-button" onclick="handleDoorClick()" title="Porte">
+        <img src="/src/assets/icons/door.png" class="bottom-icon-img" alt="Porte" />
+      </button>
+
+      <button class="icon-button" onclick="handleTechnicienClick()" title="Technicien">
+        <img src="/src/assets/icons/person.png" class="bottom-icon-img" alt="Technicien" />
+      </button>
+
+      <img src="/src/assets/icons/manual-call-point.png" class="bottom-icon-img" alt="Déclencheur manuel" />
+      <img src="/src/assets/icons/detector.png" class="bottom-icon-img" alt="Détecteur" />
+
+      <button class="icon-button" onclick="handleKey()" title="Clé réarmement">
+        <img src="/src/assets/icons/cle.png" class="bottom-icon-img" alt="Clé" />
+      </button>
+
+      <button class="icon-button" onclick="handleMute()" title="Coupure alarme">
+        <img src="/src/assets/icons/coupure-alarme.png" class="bottom-icon-img" alt="Coupure alarme" />
+      </button>
+    </div>
+  </section>
+
+  <script src="/src/main.js"></script>
+</body>
+</html>

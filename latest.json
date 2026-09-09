@@ -1,11 +1,11 @@
 {
-    "version":  "0.1.21",
-    "notes":  "Mise à jour SSI SIMU 0.1.21",
-    "pub_date":  "2026-09-09T16:02:48.6940500Z",
+    "version":  "0.1.22",
+    "notes":  "Mise à jour SSI SIMU 0.1.22",
+    "pub_date":  "2026-09-09T19:51:09.4818666Z",
     "platforms":  {
                       "windows-x86_64":  {
-                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUTdvQVFpcjZZZXdub3ZWOFJGSlRWWnR0L2xBTjZ5K2oxejVKY1JORWpOVVNFRDQ5am1mRWhFRHp0WEJwWGljOWFaSHVRc0hESGFOMnZ5R2tsenI2bDBaZGhMN01pVGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTY5MjEwCWZpbGU6c3NpLXNpbXVfMC4xLjIxX3g2NC1zZXR1cC5leGUKSkNGZldPM3owMEVVYTd5L2ZHMTJjODBqZ2RLa21vK0Zrd2xYUDQ0SFNqaXM3US9SNEhwUUVGRGhRWS9XZHlYc3h4elphRTJVSEVtT2N1YXVaWGQ0QVE9PQo=",
-                                             "url":  "https://github.com/Michael-Incendis/ssi-simu-updates/releases/download/v0.1.21/ssi-simu_0.1.21_x64-setup.exe"
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRUTdvQVFpcjZZZTZRQ3hyVWhoc3lWV1NXM1c0TXQ1N1pBUjNSZXJIeEhoWUZycHMxT3hnbGxHcDlMVm1xRExRbGxBQnhleFZQNUpIN1BNN3FjQVNEemI2WEFaYWdpN0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTgzMzYwCWZpbGU6c3NpLXNpbXVfMC4xLjIyX3g2NC1zZXR1cC5leGUKcmk0MmlMa1JRc2sxZmpLUEt0aEtZTlY2YmloU1ZzbjlhNmpCWk9UcFpDZFMzN21YN3JITUxsSkxMbHh1RHhQTFAvL3ZZdkNGOHhOSjAyWHRJaHczQ1E9PQo=",
+                                             "url":  "https://github.com/Michael-Incendis/ssi-simu-updates/releases/download/v0.1.22/ssi-simu_0.1.22_x64-setup.exe"
                                          }
                   }
 }
